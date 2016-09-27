@@ -1,0 +1,29 @@
+<head>
+<!--You can totally change this title if you want-->
+<title>apiTools</title>
+
+<!--jQuery v1.10.2-->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<!--jQuery v1.11.1 Not sure if this conflicts with above. In the original document all of the jquery 
+was written with a "jQuery" instead of the $ sign in front of every jQuery function. It was weird.-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+
+<!--this is an imported CSS library from geobytes.com-->
+<link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/flick/jquery-ui.css" />
+<script src="js/apiTools.js" async></script>
+</head>
+
+<body>
+<form>
+<strong>Enter A City: </strong><input type="text" id="cityfield" value=""><br>
+<input id="button" type="submit" value="Submit">
+</form>
+
+<p><strong>Location Info:</strong></p>
+
+<!--The weather API, and the geobytes.com API didn't seem to read in the input the same way creating some compatibility issues. 
+The weather one is just for Utah I think, and the other one reads cities from all over the world.-->
+<div id="weather"></div>
+<div id="locInfo">No other local info</div>
+</body>
